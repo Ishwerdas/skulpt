@@ -1366,6 +1366,37 @@ Sk.builtin.intern = function intern () {
     throw new Sk.builtin.NotImplementedError("intern is not yet implemented");
 };
 
+Sk.builtin.changeBG = function changeBG (colorName) {
+	document.body.style.background = colorName.v;
+}
+
+Sk.builtin.addheading = function addheading (domId, heading, size) {
+//	addHeading(heading,size);
+	document.getElementById(domId.v).innerHTML = heading.v;
+	document.getElementById(domId.v).style.fontSize = size.v;
+}
+Sk.builtin.addSpaceship = function addSpaceship (topSize, leftSize, shipSize, nameOfShip, isEngineOn){
+	var random = Math.floor(Math.random()*9);
+	document.getElementById('heading').innerHTML+= "<img src='./images/spaceship"+random+".png' class='spaceship' id='"+random+"space' />";
+	var spaceship = document.getElementById(random+'space');
+	spaceship.style.width = shipSize.v;
+	spaceship.style.top = topSize.v ;
+	spaceship.style.left = leftSize.v;
+	var up = true;
+	setInterval(function() {	
+		if(up==true){
+			 for(var i=1;i<=10;i++){
+				 spaceship.style.top = JSON.stringify(parseInt(topSize.v, 10) + i) + "px"; 
+			 }
+			 up = false;
+		} else {
+			 for(var i=1;i<=10;i++){
+			 	spaceship.style.top = JSON.stringify(parseInt(topSize.v, 10) - 10) + "px"; 
+			 }
+			 up = true;
+		}
+	},1000);
+}
 
 /*
  Sk.builtinFiles = {};

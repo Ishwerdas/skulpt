@@ -107,6 +107,9 @@ Sk.builtins = {
     "apply_$rn$": Sk.builtin.apply_,
     "buffer"    : Sk.builtin.buffer,
     "coerce"    : Sk.builtin.coerce,
-    "intern"    : Sk.builtin.intern
+    "intern"    : Sk.builtin.intern,
+	"changeBG"	: Sk.builtin.changeBG,
+	"addheading": Sk.builtin.addheading,
+	"addSpaceship"	: Sk.builtin.addSpaceship
 };
 goog.exportSymbol("Sk.builtins", Sk.builtins);
