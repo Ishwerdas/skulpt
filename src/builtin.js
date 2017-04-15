@@ -1367,16 +1367,16 @@ Sk.builtin.intern = function intern () {
 };
 
 Sk.builtin.changeBG = function changeBG (colorName) {
-	document.body.style.background = colorName.v;
+	/*	document.body.style.background = colorName.v; */
 }
 
 Sk.builtin.addheading = function addheading (domId, heading, size) {
 //	addHeading(heading,size);
-	document.getElementById(domId.v).innerHTML = heading.v;
-	document.getElementById(domId.v).style.fontSize = size.v;
+	/*document.getElementById(domId.v).innerHTML = heading.v;
+	document.getElementById(domId.v).style.fontSize = size.v;*/
 }
 Sk.builtin.addSpaceship = function addSpaceship (topSize, leftSize, shipSize, nameOfShip, isEngineOn){
-	var random = Math.floor(Math.random()*9);
+/*	var random = Math.floor(Math.random()*9);
 	document.getElementById('heading').innerHTML+= "<img src='./images/spaceship"+random+".png' class='spaceship' id='"+random+"space' />";
 	var spaceship = document.getElementById(random+'space');
 	spaceship.style.width = shipSize.v;
@@ -1395,9 +1395,18 @@ Sk.builtin.addSpaceship = function addSpaceship (topSize, leftSize, shipSize, na
 			 }
 			 up = true;
 		}
-	},1000);
+	},1000);*/
 }
 
+Sk.builtin.positionEl = function positionEl (el, left, top) { }
+Sk.builtin.addImage = function addImage (src, size) { }
+Sk.builtin.showError = function showError (error) { }
+Sk.builtin.bounceAnimation = function bounceAnimation (el, scale) { }
+Sk.builtin.bounce = function bounce (el, scale) { }
+Sk.builtin.moveX = function moveX (el, initialX, finalX, turns, alternate) { }
+Sk.builtin.moveY = function moveY (el, initialY, finalY, turns) { }
+Sk.builtin.moveVAnimation = function moveVAnimation (el, initialY, finalY, turns) { }
+Sk.builtin.moveHAnimation = function moveHAnimation (el, initialX, finalX, turns, alternate) { }
 /*
  Sk.builtinFiles = {};
  Sk.builtin.read = function read(x) {

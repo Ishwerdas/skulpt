@@ -108,8 +108,18 @@ Sk.builtins = {
     "buffer"    : Sk.builtin.buffer,
     "coerce"    : Sk.builtin.coerce,
     "intern"    : Sk.builtin.intern,
+	// Custom functins Codewizard
 	"changeBG"	: Sk.builtin.changeBG,
 	"addheading": Sk.builtin.addheading,
-	"addSpaceship"	: Sk.builtin.addSpaceship
+	"addSpaceship"	: Sk.builtin.addSpaceship,
+	"postionEl"	: Sk.builtin.positionEl,
+	"addImage" : Sk.builtin.addImage,
+	"showError" : Sk.builtin.showError,
+	"bounceAnimation" : Sk.builtin.bounceAnimation,
+	"bounce" : Sk.builtin.bounce,
+	"moveX" : Sk.builtin.moveX,
+	"moveY" : Sk.builtin.moveY,
+	"moveVAnimation" : Sk.builtin.moveVAnimation,
+	"moveHAnimation" : Sk.builtin.moveHAnimation
 };
 goog.exportSymbol("Sk.builtins", Sk.builtins);
